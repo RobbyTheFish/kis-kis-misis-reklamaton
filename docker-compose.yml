@@ -3,7 +3,7 @@ version: '3.8'
 services:
   service1:
     build:
-      context: ./service1
+      context: ./Calendar-KisKis-back
     ports:
       - "3001:3000" # Маппинг порта
     environment:
@@ -11,7 +11,7 @@ services:
 
   service2:
     build:
-      context: ./service2
+      context: ./kiskis-auth-back
     ports:
       - "3002:3000" # Маппинг порта
     environment:
@@ -19,7 +19,7 @@ services:
 
   service3:
     build:
-      context: ./service3
+      context: ./kiskis-calendar-frontfinal
     ports:
       - "3003:3000" # Маппинг порта
     environment:
@@ -27,7 +27,7 @@ services:
 
   service4:
     build:
-      context: ./service4
+      context: ./yandex-maps-backend-kiskis
     ports:
       - "3004:3000" # Маппинг порта
     environment:
