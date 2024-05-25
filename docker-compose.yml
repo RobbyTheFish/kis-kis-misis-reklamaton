@@ -24,3 +24,14 @@ services:
       - "3004:3000" # Маппинг порта
     environment:
       - NODE_ENV=production
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: auth_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
