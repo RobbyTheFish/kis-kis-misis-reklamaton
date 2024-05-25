@@ -17,14 +17,6 @@ services:
     environment:
       - NODE_ENV=production
 
-  service3:
-    build:
-      context: ./kiskis-calendar-frontfinal
-    ports:
-      - "3003:3000" # Маппинг порта
-    environment:
-      - NODE_ENV=production
-
   service4:
     build:
       context: ./yandex-maps-backend-kiskis
