@@ -1,0 +1,29 @@
+version: '3'
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+
+api-service2:
+    build:
+      context: ./api2
+      dockerfile: Dockerfile
+    ports:
+      - "6000:6000"
+
+
+nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - api-service2
+
+volumes:
+  pgdata:

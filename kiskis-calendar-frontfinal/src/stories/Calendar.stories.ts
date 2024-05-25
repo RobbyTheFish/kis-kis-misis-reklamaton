@@ -21,6 +21,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const DefaultCalendar: Story = {
   args: {
-    calendars: [{ calendarId: "09opmkrjova8h5k5k46fedmo88@group.calendar.google.com" }]
+    calendars: [{ calendarId: "89f25550f7faf78d9d470bd0c4b23b8ba28f6b78821af4d60ff47facc1a715b7@group.calendar.google.com" }]
   }
 };
